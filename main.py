@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import os
 import sys
 import time
 import logging
@@ -7,6 +8,8 @@ import cv2
 import numpy as np
 from bluepy import btle
 from deepface import DeepFace
+from controller import MiLampController
+from dotenv import load_dotenv
 
 # ============ 第一部分：配置参数 ============
 # 设置日志
